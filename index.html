@@ -19,7 +19,7 @@
                 </nav>
             </div>
         </div>
- 
+
     </header>
     <section class="hero">
         <div class="hero-text">
@@ -32,16 +32,16 @@
         </div>
     </section>
 
-    <main>
-        <div>
+    <main class="container">
+        <div class="product-grid-header">
             <h2>Featured Books</h2>
-            <div>
-                <select name="" id="">
+            <div class="filters">
+                <select class="filter-dropdown">
                     <option value="tech">Technology</option>
                     <option value="sci-fi">Sci-Fi</option>
                     <option value="fiction">Fiction</option>
                 </select>
-                <select name="" id="">
+                <select class="sort-dropdown">
                     <option value="Featured">Featured</option>
                     <option value="price-low">Price: Low to High</option>
                     <option value="price-high">Price: High to Low</option>
@@ -49,20 +49,20 @@
             </div>
         </div>
 
-        <div>
-            <article>
-                <div>
+        <div class="product-grid">
+            <article class="product-card">
+                <div class="card-image">
                     <img src="" alt="Image of Book 1 Cover">
                 </div>
 
-                <div>
-                    <span>Technology</span>
-                    <h3>The Pragmatic Programmer</h3>
-                    <p>By Michael Mulwa</p>
-                    <div>Start to Add</div>
-                    <div>
-                        <span>$99.99</span>
-                        <button>Add to Cart</button>
+                <div class="card-body">
+                    <span class="badge">Technology</span>
+                    <h3 class="product-title">The Pragmatic Programmer</h3>
+                    <p class="author">By Michael Mulwa</p>
+                    <div class="rating">Start to Add</div>
+                    <div class="card-footer">
+                        <span class="price">$99.99</span>
+                        <button class="btn-primary">Add to Cart</button>
                     </div>
                 </div>
             </article>
@@ -70,24 +70,23 @@
 
     </main>
 
-    <footer>
-        <div>
+    <footer class="main-footer">
+        <div class="footer-container">
             <p>The Best reading Books</p>
-            <p>Discover a World where imagination comes alive and knowledge knows no bounds.</p>
+            <p class="footer-muted">Discover a World where imagination comes alive and knowledge knows no bounds.</p>
 
-            <div>
+            <div class="social-icons">
                 <!-- Social Media Links -->
-                <span>facebook</span>
+                <span>Facebook</span>
                 <span>Instagram</span>
                 <span>Twitter</span>
             </div>
 
-            <p> Copyright 2026. All Rights Reserved.</p>
+            <p class="copyright"> Copyright 2026. All Rights Reserved.</p>
 
         </div>
 
     </footer>
 
 </body>
-
 </html>
