@@ -1,3 +1,31 @@
+/* GLOBAL */
+:root {
+  --bg-main: #e8e4df;       /* Soft warm background matching your sketch */
+  --bg-card: #ffffff;       /* Pure white for book cards */
+  --text-main: #1a1a1a;     /* Dark charcoal for main headings */
+  --text-muted: #666666;    /* Soft gray for subtext */
+  --primary-blue: #1d72f3;  /* Blue color for badges and 'Add to Cart' buttons */
+  --btn-dark: #111111;      /* Dark color for 'Get Started' and 'Sign Up' */
+  --border-color: #e0e0e0;
+  --font-family: Arial, sans-serif;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+
+/* NAVIGATION */
 .navbar {
   padding: 1.2rem 2rem;
   background-color: var(--bg-main);
