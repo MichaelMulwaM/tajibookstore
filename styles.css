@@ -178,3 +178,37 @@
   padding: 0.4rem 0.8rem;
   font-size: 0.85rem;
 }
+
+/* FOOTER STYLES */
+.main-footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: var(--bg-main);
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-container h3, .main-footer p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-muted {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.social-icons span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
