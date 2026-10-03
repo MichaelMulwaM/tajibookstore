@@ -197,7 +197,9 @@ body {
 
 .price {
   font-weight: bold;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  color: var(--text-main);
+  background: none;
 }
 
 .card-footer .btn-primary {
