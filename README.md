@@ -14,7 +14,7 @@ Taji Bookstore is a responsive landing page for an online bookstore. The main go
 
 ---
 
-## 🛠️ Key Technical Features
+## Key Technical Features
 * **Custom CSS Variables:** Built color themes using native CSS custom properties for instant background, text, and border switching.
 * **Flexbox & CSS Grid Layouts:**
   * **Flexbox:** Used in the navbar, hero section, card footers, and footer controls for alignment.
