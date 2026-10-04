@@ -1,14 +1,51 @@
 /* GLOBAL */
 :root {
-  --bg-main: #e8e4df;       /* Soft warm background matching your sketch */
-  --bg-card: #ffffff;       /* Pure white for book cards */
-  --text-main: #1a1a1a;     /* Dark charcoal for main headings */
-  --text-muted: #666666;    /* Soft gray for subtext */
-  --primary-blue: #1d72f3;  /* Blue color for badges and 'Add to Cart' buttons */
-  --btn-dark: #111111;      /* Dark color for 'Get Started' and 'Sign Up' */
+  --bg-main: #e8e4df;
+  --bg-card: #ffffff;
+  --text-main: #1a1a1a;
+  --text-muted: #666666;
+  --primary-blue: #1d72f3;
+  --btn-dark: #111111;
   --border-color: #e0e0e0;
   --font-family: Arial, sans-serif;
   --radius: 8px;
+}
+
+html.dark {
+  --bg-main: #0f172a;
+  --bg-card: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --btn-dark: #38bdf8;
+  --border-color: #334155;
+}
+
+html.dark .navbar {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+html.dark .main-footer {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--text-main);
+  color: var(--text-main);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--btn-dark);
+  color: #ffffff;
 }
 
 * {
@@ -29,6 +66,9 @@ body {
 .navbar {
   padding: 1.2rem 2rem;
   background-color: var(--bg-main);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
 }
 
 .nav-container {
@@ -66,8 +106,8 @@ body {
 /* HERO SECTION */
 .hero {
   max-width: 1200px;
-  margin: 2rem auto 4rem auto;
-  padding: 0 2rem;
+  margin: 0 auto 4rem auto;
+  padding: 2rem 2rem 0 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -254,7 +294,7 @@ body {
   text-align: center;
   padding: 3rem 1rem;
   background-color: var(--bg-main);
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .footer-container h3, .main-footer p {
